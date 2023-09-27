@@ -6,8 +6,15 @@ To use,
 ```bash
 git clone https://github.com/spamegg1/scala-toolkit-tutorial
 ```
-4. Open the folder in Visual Studio Code
-5. Open the integrated terminal, and run
+4. Open the folder and set it up for use with `scala-cli` and VS Code:
+
 ```bash
+cd scala-toolkit-tutorial
 scala-cli setup-ide .
+```
+
+5. Open the folder in VS Code:
+
+```bash
+code .
 ```
