@@ -17,9 +17,9 @@ def useWebSocket(ws: WebSocket[Future]): Future[Unit] =
     text <- ws.receiveText()
   yield println(text)
 
-val response = quickRequest
-  .get(uri"wss://ws.postman-echo.com/raw")
-  .response(asWebSocketAlways(useWebSocket))
-  .send(asyncBackend)
+// val response = quickRequest
+//   .get(uri"wss://ws.postman-echo.com/raw")
+//   .response(asWebSocketAlways(useWebSocket))
+//   .send(asyncBackend)
 
-Await.result(response, Duration.Inf)
+// Await.result(response, Duration.Inf)

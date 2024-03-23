@@ -23,7 +23,7 @@ json("nickname") = "Pete"
 json("pets").arr.remove(1)
 
 val result: String = ujson.write(json) // Write it back to a String
-result
+// result
 
 val json2 = """{"primes": [2, 3, 5], "evens": [2, 4, 6]} """
 val map: Map[String, List[Int]] = read[Map[String, List[Int]]](json2)
@@ -45,11 +45,11 @@ s"${petOwner.name} has a pet called $firstPet2"
 
 val map2: Map[String, Int] = Map("Toolkitty" -> 3, "Scaniel" -> 5)
 val jsonString2: String = write(map2)
-jsonString2
+// jsonString2
 
 val petOwner2 = PetOwner("Peter", List("Toolkitty", "Scaniel"))
 val json5: String = write(petOwner)
-json5
+// json5
 
 val json6 = ujson.read(os.read(os.pwd / "raw.json"))
 json6("updated") = "now" // modify the JSON content
@@ -76,4 +76,4 @@ object Bar:
 
 val bar = Bar(5, "bar")
 val json7 = upickle.default.write(bar)
-json7
+// json7
